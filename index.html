@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU </title>
+    <style>
+        /* Estiliza o body da página */
+        body {
+            background-image: url('web-dev.png');
+            background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+            background-position: center; /* Centraliza a imagem no elemento */
+            font-family: Arial, sans-serif; /* Define a fonte para o texto */
+            margin: 0; /* Remove a margem padrão do body */
+            padding: 0; /* Remove o padding padrão do body */
+            display: flex; /* Utiliza flexbox para layout */
+            flex-direction: column; /* Organiza o conteúdo verticalmente */
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
+        }
+
+        /* Estiliza o container principal que contém o menu e a imagem */
+        .container {
+            display: flex; /* Utiliza flexbox para layout */
+            justify-content: space-between; /* Espaça os itens igualmente ao longo do eixo horizontal */
+            align-items: flex-start; /* Alinha os itens ao início do eixo vertical */
+            width: 1500px; /* Define a largura do container */
+            margin: 20px; /* Adiciona margem ao redor do container */
+        }
+
+        /* Estiliza a seção do menu */
+        .menu {
+            flex: 1; /* Permite que o menu ocupe um espaço flexível */
+        }
+
+        /* Estiliza a lista dentro da seção do menu */
+        .menu ul {
+            margin: 0; /* Remove a margem padrão da lista */
+            padding: 0; /* Remove o padding padrão da lista */
+            list-style-type: none; /* Remove os marcadores da lista */
+        }
+
+        /* Estiliza cada item da lista */
+        .menu ul li {
+            position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+        }
+
+        /* Estiliza a lista suspensa que aparece ao passar o mouse */
+        .menu li ul {
+            position: absolute; /* Posiciona a lista suspensa de forma absoluta em relação ao pai */
+            left: 160px; /* Posiciona a lista suspensa 160px à direita do item pai */
+            top: 0; /* Alinha a lista suspensa ao topo do item pai */
+            display: none; /* Oculta a lista suspensa por padrão */
+        }
+
+        /* Estiliza os links na lista */
+        .menu ul li a {
+            display: block; /* Faz o link ocupar a área do item da lista */
+            text-decoration: none; /* Remove o sublinhado padrão dos links */
+            color: #E2144A; /* Define a cor do texto dos links */
+            background: #c9b5b5; /* Define o fundo branco dos links */
+            padding: 50px; /* Adiciona padding ao redor do texto dos links */
+            border: 5px solid #915353; /* Adiciona uma borda cinza ao redor dos links */
+            font-size: 24px; /* Define o tamanho da fonte dos links */
+            box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+        }
+
+        /* Estiliza o estado de hover dos links */
+        .menu ul li a:hover {
+            text-decoration: underline; 
+            font-weight: bolder;
+            background: #ccc; 
+        }
+
+        /* Exibe a lista suspensa quando o item da lista é hover */
+        .menu li:hover ul {
+            display: block; 
+        }
+
+        /* Estiliza o container da imagem */
+        .image-container {
+            flex: 1; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        /* Estiliza a imagem */
+        .image-container img {
+            border-radius: 50%; 
+            opacity: 0.9; 
+            display: block; 
+            max-width: 500px;
+            width: 100%; 
+        }
+        footer {   /*estiliza o rodapé*/
+            background-color: #f1f1f1;
+            padding: 40px;
+            text-align: center;
+            border-top: 6px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>      <!--area de cabecalho-->
+    <div class="container">
+        <div class="menu">  
+            <ul>  <!--lista desorganizada-->
+                <li><a href="Sobre.mim.html">Sobre mim</a></li>
+                <li><a href="Formação.html">Formação Acadêmica</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div> 
+    
+        <div class="image-container">      <!--contenier da imagem-->
+            <img src="46aacb49-d424-4042-a67c-0a89a4efa28b.jpeg" alt="Sandreane">
+        </div>
+    </header>
+    </div>
+    <footer>       <!--Rodapé-->
+        <p>&copy; 2024 Sandreane da Costa Braz Sousa</p>
+    </footer>
+</body>
+</html>
