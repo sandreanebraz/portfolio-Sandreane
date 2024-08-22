@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        h2{
+            color: rgb(5, 28, 158); /*define a cor da letra */
+            border: 20px; /* borda*/
+        }
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte para o texto */
+            margin: 0; /* Remove a margem padrão do body */
+            padding: 0; /* Remove o padding padrão do body */
+            display: flex; /* Utiliza flexbox para layout */
+            flex-direction: column; /* Organiza o conteúdo verticalmente */
+        }
+
+    </style>
+</head>
+<body> 
+    <h2>Contato</h2>
+    <!--Formulario-->
+        <form action="/submit-form" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
